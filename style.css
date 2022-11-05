@@ -1,0 +1,253 @@
+:root {
+  --main-branding-color: #bb6cba;
+  --secondary-color: #f6f4f6;
+}
+
+.body {
+  font-family: "Questrial", sans-serif;
+  background-color: var(--secondary-color);
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin: auto 0px;
+}
+
+span {
+  color: var(--main-branding-color);
+}
+
+p {
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.navbar {
+  background-color: var(--main-branding-color);
+}
+
+li > .nav-link,
+div > .navbar-brand,
+li > .nav-link .active {
+  color: var(--secondary-color);
+}
+
+/* HERO SECTION */
+#hero {
+  padding: 5% 3%;
+  margin: 5% 3%;
+}
+
+.text-block {
+  margin-left: 10%;
+  padding-top: 5%;
+  line-height: 1;
+}
+
+#hero_heading {
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+#hero_para {
+  padding-top: 15px;
+  text-align: justify;
+}
+
+button {
+  background-color: var(--main-branding-color);
+  color: var(--secondary-color);
+  border: var(--main-branding-color);
+  border-radius: 50%;
+  padding: 15px 15px;
+  margin: 10%;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+  cursor: pointer;
+  border-radius: 10px !important;
+}
+
+.hero-image {
+  border-radius: 50%;
+  padding-top: 3%;
+  margin-left: 10%;
+}
+
+/* ABOUT SECTION */
+#about {
+  padding: 2% 5%;
+  margin: 0px 5%;
+}
+
+#about_text {
+  padding-top: 2%;
+  margin: 0px;
+  text-align: justify;
+}
+#about_img {
+  border-radius: 8px;
+}
+
+.row ul {
+  list-style-type: none;
+  line-height: 1.5;
+  padding-top: 3%;
+  padding-left: 0px;
+}
+
+#about-heading,
+#about-subheading {
+  font-weight: 800;
+}
+
+/* TOOLKIT SECTION*/
+
+.toolkit_heading {
+  margin: 7% 7% 3% 7%;
+  font-weight: 800;
+}
+
+.toolkit_icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0px 10%;
+}
+
+.icon {
+  padding: 10%;
+  margin: 5%;
+}
+
+.icon_html:hover {
+  color: #dd4b25;
+  transition: all 100ms ease-in-out;
+}
+.icon_css:hover {
+  color: #264fe5;
+  transition: all 100ms ease-in-out;
+}
+.icon_js:hover {
+  color: #f9d02c;
+  transition: all 100ms ease-in-out;
+}
+.icon_bootstrap:hover {
+  color: #7611ed;
+  transition: all 100ms ease-in-out;
+}
+.icon_react:hover {
+  color: #55bed9;
+  transition: all 100ms ease-in-out;
+}
+.icon_github:hover {
+  color: grey;
+  transition: all 100ms ease-in-out;
+}
+.icon_drupal:hover {
+  color: #0094d3;
+  transition: all 100ms ease-in-out;
+}
+.icon_wordpress:hover {
+  color: #1f6f93;
+  transition: all 100ms ease-in-out;
+}
+
+/* PROJECTS SECTION */
+
+.project_heading {
+  margin: 7% 7% 3% 7%;
+  font-weight: 800;
+}
+
+.block-1 {
+  margin: 5% 5px !important;
+}
+
+.text-block {
+  text-align: left;
+  margin-left: 0px;
+  margin-top: 0px;
+  padding-top: 10px;
+}
+.project_image {
+  width: 450px;
+  height: 500px;
+  border: solid 8px #ead2ea;
+}
+
+.project_block {
+  padding-left: 7%;
+  padding-right: 7%;
+  margin: 5%;
+}
+
+/* Contact section */
+.contact_heading {
+  margin: 7% 7% 3% 7%;
+  font-weight: 800;
+}
+
+.contact_block {
+  padding: 5% 15%;
+}
+.contact a {
+  text-decoration: none;
+  color: black;
+}
+.contact:hover {
+  color: var(--main-branding-color);
+}
+
+.contact_block a:hover {
+  color: var(--main-branding-color);
+  transition: all 150ms ease-in-out;
+}
+
+@media (max-width: 650px) {
+  body {
+    width: 100%;
+    margin: auto 0;
+  }
+
+  /* HERO SECTION */
+  #hero {
+    padding: 10% 3%;
+    margin: 10% 3%;
+  }
+  #hero_heading,
+  #about-heading,
+  .toolkit_heading,
+  .project_heading,
+  #project_heading,
+  .contact_heading {
+    text-align: center;
+  }
+  p {
+    line-height: 1.5;
+    text-align: left;
+  }
+  .hero_button {
+    margin: 0 20%;
+  }
+  .hero-image {
+    margin: auto 0px;
+    order: 1;
+  }
+
+  .text-block {
+    order: 2;
+  }
+
+  #about_text {
+    padding-top: 10%;
+  }
+
+  .toolkit_icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0px 10%;
+  }
+  #project_button {
+    margin-left: 25%;
+  }
+  #project_button_more {
+    margin-left: 30%;
+  }
+}
