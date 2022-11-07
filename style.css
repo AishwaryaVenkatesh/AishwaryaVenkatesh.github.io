@@ -200,6 +200,16 @@ button {
   transition: all 150ms ease-in-out;
 }
 
+.open-source {
+  text-align: center;
+  padding-top: 15px;
+  margin: auto;
+}
+.open-source a {
+  color: var(--main-branding-color);
+  text-decoration: none;
+}
+
 @media (max-width: 650px) {
   body {
     width: 100%;
